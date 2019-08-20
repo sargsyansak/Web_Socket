@@ -21,6 +21,7 @@ public class ChatController {
     @SendTo("/topic/public")
     public ChatMessage register(@Payload ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor) {
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        chatMessageRepository.save(chatMessage);
         return chatMessage;
     }
 
