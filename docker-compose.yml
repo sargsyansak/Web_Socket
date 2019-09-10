@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  websocket:
+    restart: always
+    build:
+      context: /
+      dockerfile: ./Dockerfile
+    working_dir: /websocket
+    volumes:
+      - ./:/websocket
+      - ~/.m2:/root/.m2
+    expose:
+      - "8090"
+    command: mvn clean spring-boot:run
+
