@@ -7,9 +7,6 @@ services:
       context: /
       dockerfile: ./Dockerfile
     working_dir: /websocket
-    volumes:
-      - ./websocket:/websocket
-      - ~/.m2:/root/.m2
     expose:
       - "8090"
     command: mvn clean spring-boot:run
