@@ -8,7 +8,7 @@ services:
       dockerfile: ./Dockerfile
     working_dir: /websocket
     volumes:
-      - ./app:/app
+      - ./websocket:/websocket
       - ~/.m2:/root/.m2
     expose:
       - "8090"
