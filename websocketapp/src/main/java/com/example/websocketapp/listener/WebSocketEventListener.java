@@ -1,7 +1,7 @@
-package com.example.websocket.listener;
+package com.example.websocketapp.listener;
 
-import com.example.websocket.model.ChatMessage;
-import com.example.websocket.model.MessageType;
+import com.example.websocketapp.model.ChatMessage;
+import com.example.websocketapp.model.MessageType;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

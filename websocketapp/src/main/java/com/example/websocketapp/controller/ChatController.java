@@ -1,7 +1,7 @@
-package com.example.websocket.controller;
+package com.example.websocketapp.controller;
 
-import com.example.websocket.model.ChatMessage;
-import com.example.websocket.repository.ChatMessageRepository;
+import com.example.websocketapp.model.ChatMessage;
+import com.example.websocketapp.repository.ChatMessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
